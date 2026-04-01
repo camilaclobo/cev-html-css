@@ -28,7 +28,6 @@ main{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
 
   background-color: white;
@@ -37,6 +36,7 @@ main{
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
 
+  transform: translate(-50%, -50%);
   transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
 }
@@ -72,8 +72,31 @@ main{
   display: block;
   width: 100%;
   height: 40px;
-  border-radius: 5px;
+  border: 2px solid #D6934F;
+  border-radius: 8px;
   margin: 5px 0px;
+}
+.campo > span{
+  color: white;
+  /*background-color: black;*/
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+}
+
+.campo > input{
+  background-color: #02bbea;
+  font-size: 1em;
+  width: calc(100% - 44.5px);
+  height: 100% ;
+  padding: 4px;
+  border: 0px;
+  border-radius: 8px;
+  transform: translateY(-12.5px) ;
+}
+
+.campo > input:focus-within{
+  background-color: white;
 }
 
 #botao-enviar{
